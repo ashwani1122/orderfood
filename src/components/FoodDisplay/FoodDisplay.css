@@ -1,0 +1,56 @@
+.both{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.both h2{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    align-items: center;
+}
+.container{
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+}
+.container h2{
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+.food-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+@media (max-width: 1050px) {
+    .content{
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        
+
+    }
+    .food-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: smaller;
+        width: 100%;
+    }
+
+}
+@media (max-width: 750px) {
+    .food-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

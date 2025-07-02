@@ -6,7 +6,7 @@ export const StoreProvider = (props) => {
         const [cartItems, setCartItems] = React.useState({});
         const [token , setToken] = React.useState("");
         const [food_list , setFoodList] = React.useState([]);
-        const url = 'http://localhost:8080';
+        const url = 'https://food-order-1-fps6.onrender.com/'; 
         const addToCart =async (itemId) => {
             if(!cartItems[itemId]){
                 setCartItems({...cartItems, [itemId]: 1});
@@ -36,13 +36,10 @@ export const StoreProvider = (props) => {
         const getFoodList = async () => {
             const response = await axios.get(`${url}/api/food/getFood`);
             setFoodList(response.data.food)
-            console.log(food_list)
-            console.log(food_list.length)
-            console.log(response.data.food)
         }
         const loadCartData = async (token) =>{
             
-            if(token ){
+            if(token){
                 const response = await axios.get(`${url}/api/cart/getcart`, {headers:{token}});
                 setCartItems(response.data.cartData);
             }   

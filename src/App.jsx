@@ -14,6 +14,8 @@ function App() {
   const url = 'https://food-order-1-fps6.onrender.com'
   return (
     <>
+
+    
     {showLogin ? <LoginPopup url={url} setShowLogin={setShowLogin} />:<></> }
     <div className="App">
         <Navbar setShowLogin={setShowLogin}/>
@@ -29,4 +31,6 @@ function App() {
     </>
   )
 }
+
+
 export default App

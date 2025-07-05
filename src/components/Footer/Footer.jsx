@@ -6,17 +6,18 @@ const Footer = () => {
         <div id='footer' className='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
-                    <div className="tomato">
-                   <h2>Food Order</h2>
+                    <div style={{display:"flex" , flexDirection:"column", alignItems : "center"}}>
+                <h2>Food Order</h2>
+                <p style={{width:"50%" , alignItems:"center" , justifyContent:"center", textAlign:"center" }}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, doloremque.</p>
                     </div>
-                <p>we are a leading food delivery service provider in the city . we deliver food to your doorstep</p>
+              
                 <div className="social">
                     <img src={assets.facebook_icon} alt="" />
                     <img src={assets.twitter_icon} alt="" />
                     <img src={assets.linkedin_icon} alt="" />
                     </div>
                 </div>
-                <div className="footer-content-middle">
+                <div className="footer-content-middle" style={{display:"flex" , flexDirection:"column", alignItems : "center" , gap:"1rem" , }}>
                 <h2>COMPANY</h2>
                 <ul>
                     <li>Home</li>
@@ -25,7 +26,7 @@ const Footer = () => {
                     <li>privacy policy</li>
                 </ul>
                 </div>
-                <div id="contact-app" className="footer-content-right">
+                <div id="contact-app" className="footer-content-right" style={{display:"flex" , flexDirection:"column", alignItems : "center" , gap:"1rem"}}>
                     <h2>GET IN TOUCH</h2>
                     <ul>
                         <li>+91 9876543210</li>

@@ -4,12 +4,12 @@
     justify-content: space-between;
     gap: 2rem;
     align-items: center;
-
     padding: 1.5rem;
+    padding-top: 5rem;
     max-width: 1200px;
     margin: auto;
     box-sizing: border-box;
-    align-items: flex-start; /* Align both sections at the top */
+    align-items: flex-start;
     }
     .place-order-left-details,
     .place-order-write {

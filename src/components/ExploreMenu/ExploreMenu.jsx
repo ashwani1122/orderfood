@@ -11,8 +11,9 @@ import { menu_list } from "../../assets/assets"
                 <div style={{width:"100%", margin:"auto"}} id= "explore-menu" className='menu-list'>
                     {menu_list.map((menu , index)=>{
                         return (
-                            <div id="Menu" onClick={()=>setCategory((prev) => prev === menu.menu_name ? "All" : menu.menu_name)} className='menu-item'  key={index}>     
-                                <img style={{scrollBehavior:"smooth"}} src={menu.menu_image} alt={menu.menu_name}/>
+                            <div id="Menu" onClick={()=>setCategory((prev) => prev === menu.menu_name ? "All" : menu.menu_name)} 
+                            className='menu-item'  key={index}>     
+                                <img style={{scrollBehavior:"smooth" }} src={menu.menu_image} alt={menu.menu_name}/>
                                 <h3>{menu.menu_name}</h3>
                             </div>
                         )

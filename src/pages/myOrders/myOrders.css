@@ -1,4 +1,6 @@
-
+.my-orders{
+    margin-top: 2rem;
+}
 .my-orders-details-item{
     display:grid;
     grid-template-columns: repeat(5 , 1fr);

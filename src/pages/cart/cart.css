@@ -5,6 +5,7 @@
     align-items: center;
     border-radius: 20px;
     padding-top: 10rem;
+    margin-top: 2rem;
 }
 .cart-item-title{
     display: grid;
